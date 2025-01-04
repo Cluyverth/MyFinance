@@ -7,6 +7,6 @@
         public DateTimeOffset Data { get; set; }
         public decimal Valor { get; set; }
         public int PlanoContaId { get; set; }
-        public required PlanoConta PlanoConta { get; set; }
+        public PlanoConta PlanoConta { get; set; }
     }
 }
