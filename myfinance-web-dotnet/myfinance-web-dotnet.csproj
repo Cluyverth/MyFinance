@@ -7,7 +7,7 @@
     <RootNamespace>myfinance_web_dotnet</RootNamespace>
     <UserSecretsId>94fae2c9-3bc3-4fc0-a077-ca854101ecab</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <DockerfileContext>.</DockerfileContext>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>

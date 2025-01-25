@@ -1,15 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myfinance-web-dotnet", "myfinance-web-dotnet.csproj", "{187B0878-7B71-4819-9A1F-D8C22B55A5AA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myfinance-web-dotnet", "myfinance-web-dotnet\myfinance-web-dotnet.csproj", "{187B0878-7B71-4819-9A1F-D8C22B55A5AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myfinance-web-dotnet-infra", "..\myfinance-web-dotnet-infra\myfinance-web-dotnet-infra.csproj", "{A1842703-E179-4148-9084-308F99A818D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myfinance-web-dotnet-infra", "myfinance-web-dotnet-infra\myfinance-web-dotnet-infra.csproj", "{A1842703-E179-4148-9084-308F99A818D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myfinance-web-dotnet-service", "..\myfinance-web-dotnet-service\myfinance-web-dotnet-service.csproj", "{72418FF0-54EA-400A-BD5B-A2238360279D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myfinance-web-dotnet-service", "myfinance-web-dotnet-service\myfinance-web-dotnet-service.csproj", "{72418FF0-54EA-400A-BD5B-A2238360279D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myfinance-web-dotnet-domain", "..\myfinance-web-dotnet-domain\myfinance-web-dotnet-domain.csproj", "{B0B948F3-ED84-48CF-AE24-792B8ED2246E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myfinance-web-dotnet-domain", "myfinance-web-dotnet-domain\myfinance-web-dotnet-domain.csproj", "{B0B948F3-ED84-48CF-AE24-792B8ED2246E}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{1AC472DF-40A9-4A48-ADAB-AF710CB3CDEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B0B948F3-ED84-48CF-AE24-792B8ED2246E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0B948F3-ED84-48CF-AE24-792B8ED2246E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0B948F3-ED84-48CF-AE24-792B8ED2246E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AC472DF-40A9-4A48-ADAB-AF710CB3CDEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AC472DF-40A9-4A48-ADAB-AF710CB3CDEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AC472DF-40A9-4A48-ADAB-AF710CB3CDEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AC472DF-40A9-4A48-ADAB-AF710CB3CDEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

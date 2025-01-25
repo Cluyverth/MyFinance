@@ -1,0 +1,30 @@
+services:
+  myfinance-web-dotnet:
+    image: ${DOCKER_REGISTRY-}myfinancewebdotnet
+    build:
+      context: .
+      dockerfile: myfinance-web-dotnet/Dockerfile
+    networks:
+      - myfinance-network
+    depends_on:
+      - myfinance-sqlserver
+
+  myfinance-sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: myfinance-sqlserver
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=${SA_PASSWORD}
+    ports:
+      - "1433:1433"
+    networks:
+      - myfinance-network
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+
+networks:
+  myfinance-network:
+    driver: bridge
+
+volumes:
+  sqlserver_data:
