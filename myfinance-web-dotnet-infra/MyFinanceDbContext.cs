@@ -11,7 +11,8 @@ namespace myfinance_web_dotnet_infra
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=172.17.0.3,1433;Database=myfinance;User Id=sa;Password=Sa!teste@123456;TrustServerCertificate=True;");
+            var sqlPassword = Environment.GetEnvironmentVariable("SA_PASSWORD");
+            optionsBuilder.UseSqlServer($@"Server=myfinance-sqlserver,1433;Database=myfinance;User Id=sa;Password={sqlPassword};TrustServerCertificate=True;");
         }
     }
 }
