@@ -81,6 +81,17 @@ namespace myfinance_web_dotnet.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
+        [Route("Excluir/{Id}")]
+        public IActionResult Excluir(int? Id)
+        {
+            if (Id == null) { return View(); }
+
+            _planoContaService.Excluir((int)Id);
+
+            return RedirectToAction("Index");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
